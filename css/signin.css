@@ -1,0 +1,90 @@
+html,
+body {
+  height: 100%; /* Ajustar a 100% para que ocupe toda la pantalla */
+  margin: 20; /* Asegurarse de que no haya márgenes */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url('img/Fondo fundacion lobby.jpg');
+  background-size: cover; /* Hacer que la imagen cubra toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  text-align: center; /* Asegura que el texto esté centrado */
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mayor visibilidad */
+  border-radius: 10px; /* Redondear bordes para mejorar diseño */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el formulario */
+  box-sizing: border-box; /* Asegura que el padding y el borde no afecten al tamaño total */
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 5px; /* Bordes redondeados para entradas */
+  padding: 10px; /* Relleno para entradas más grandes */
+  border: 1px solid #ccc; /* Borde suave para entradas */
+  box-sizing: border-box; /* Incluir relleno en el cálculo de dimensiones */
+  width: 100%; /* Asegurar que los inputs ocupen todo el espacio disponible */
+}
+
+.form-signin input[type="email"]:focus,
+.form-signin input[type="password"]:focus {
+  border-color: #007bff; /* Color de borde en enfoque */
+  outline: none; /* Eliminar el contorno de enfoque predeterminado */
+}
+
+button {
+  border-radius: 5px; /* Redondear los bordes del botón */
+  padding: 10px;
+  background-color: #007bff; /* Color del fondo */
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3; /* Color de fondo cuando el botón está en hover */
+}
+
+button:focus {
+  outline: none; /* Eliminar el contorno de enfoque predeterminado */
+}
+
+.checkbox label {
+  font-size: 14px; /* Tamaño de fuente para la opción de "Recuerdame" */
+}
+
+.mt-5 {
+  margin-top: 50px; /* Ajuste en el margen para que haya un espacio suficiente abajo */
+}
+
+.text-muted {
+  font-size: 12px; /* Tamaño de texto más pequeño para el pie de página */
+  color: rgba(0, 0, 0, 0.5); /* Color gris suave */
+}
+
+.titulo-app {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900; /* Extra Bold */
+}
