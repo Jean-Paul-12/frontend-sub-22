@@ -23,7 +23,12 @@ body {
   margin: auto;
   text-align: center; /* Asegura que el texto esté centrado */
   margin-bottom: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mayor visibilidad */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Fondo semi-transparente para mayor visibilidad */
   border-radius: 10px; /* Redondear bordes para mejorar diseño */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el formulario */
   box-sizing: border-box; /* Asegura que el padding y el borde no afecten al tamaño total */
@@ -37,8 +42,8 @@ body {
   z-index: 2;
 }
 
-.form-signin input[type="email"],
-.form-signin input[type="password"] {
+.form-signin input[type='email'],
+.form-signin input[type='password'] {
   margin-bottom: 10px;
   border-radius: 5px; /* Bordes redondeados para entradas */
   padding: 10px; /* Relleno para entradas más grandes */
@@ -47,8 +52,8 @@ body {
   width: 100%; /* Asegurar que los inputs ocupen todo el espacio disponible */
 }
 
-.form-signin input[type="email"]:focus,
-.form-signin input[type="password"]:focus {
+.form-signin input[type='email']:focus,
+.form-signin input[type='password']:focus {
   border-color: #007bff; /* Color de borde en enfoque */
   outline: none; /* Eliminar el contorno de enfoque predeterminado */
 }

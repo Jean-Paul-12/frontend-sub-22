@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: gray;
+}
+/*Contenedor principal*/
+.main-container {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  .card {
+    max-width: 1100px;
+    align-self: center;
+    width: calc(100% - 100px);
+    margin: 0 10px;
+  }
+}
+.content {
+  flex: 1;
+}
+
+/*Estilos de enlaces de header*/
+.nav-link:hover {
+  color: white;
+}
+.selected {
+  text-decoration: underline;
+  color: white;
+}
+
+/*Estilos de footer*/
+footer {
+  width: 100%;
+}
+
+/*Estilos de dashboard*/
+.main-container {
+  .dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Usar wrap para permitir una vista en small breakpoint mas o menos aceptable.*/
+    min-width: 256px;
+    .pfp {
+      margin-right: 25px;
+      max-width: 360px;
+      max-height: 360px;
+      width: 100%;
+    }
+    .content-container {
+      width: 100%;
+      min-width: 256px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .userinfo {
+        flex: 1;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        .btn {
+          margin-top: 10px;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
