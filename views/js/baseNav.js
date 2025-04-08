@@ -3,15 +3,14 @@ const user = sessionStorage.getItem('usuario');
 
 if (!user) {
   // en caso de no estar logeado, redirige a la landing page
-  if (['/views/dashboard.html'].includes(window.location.pathname)) {
+  if (window.location.pathname.endsWith('dashboard.html')) {
     window.location.replace('../index.html');
   }
 } else {
   // en caso de estar logeado, redirige al dashboard si el usuario intenta navegar a registro o login
   if (
-    ['/views/registro.html', '/views/login.html'].includes(
-      window.location.pathname,
-    )
+    window.location.pathname.endsWith('login.html') ||
+    window.location.pathname.endsWith('registro.html')
   ) {
     window.location.replace('dashboard.html');
   }
