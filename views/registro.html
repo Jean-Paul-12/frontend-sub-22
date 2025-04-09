@@ -1,12 +1,20 @@
 <!doctype html>
 <html lang="es">
+  <!-- Esta etiqueta configura aspectos técnicos importantes y enlaza la presentación visual de la página -->
   <head>
+    <!-- Asegura que los textos se muestren correctamente con la mayoría de los caracteres -->
     <meta charset="UTF-8" />
+    <!-- Permite que la página se adapte bien a diferentes tamaños de pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define el titulo que aparece en la pestaña del navegador -->
     <title>PGUS - Registro</title>
+    <!-- Conecta un archivo CSS externo que controla el diseño visual de la página -->
     <link rel="stylesheet" href="../css/registro.css" />
   </head>
+  <!-- Contenedor principal con todo el contenido visible de la pagina -->
   <body>
+    <!-- Las etiquetas <div> son contenedores genéricos que se utilizan para agrupar otros elementos HTML -->
+    <!-- Se define el contenedor 1 con el logo y como accion el enlace dirige a la pagina login -->
     <div class="container1">
       <div class="header">
         <div class="logo">PGUS</div>
@@ -15,10 +23,12 @@
         </div>
       </div>
     </div>
+    <!-- Se define el contenedor 2 con un formulario con identificador registroForm -->
     <div class="container2">
       <div class="content">
         <h1>Registro</h1>
         <form id="registroForm">
+          <!-- Se agrupan los label y su respectivo campo con su tipo, id, nombre, un texto de ejemplo y si es obligatorio -->
           <div class="form-group">
             <label for="nombre">Nombre*</label>
             <input
@@ -78,15 +88,19 @@
               required
             />
           </div>
+          <!-- Se define un parrafo que contiene un boton, asi mismo se asigna una clase para darle estilo -->
           <p class="block">
+            <!-- Se crea un boton que envia los datos del formulario -->
             <button type="submit" class="btn">Registrarme</button>
           </p>
         </form>
       </div>
     </div>
+    <!-- Contenedor para el pie de pagina -->
     <div class="footer">
       <p>&copy; 2025 Subgrupo 22. Todos los derechos reservados.</p>
     </div>
+    <!-- Conecta un archivo js externo que controla las validaciones de la página -->
     <script src="js/registro-validacionesRegistro.js"></script>
     <script src="js/baseNav.js"></script>
   </body>
